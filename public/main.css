@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("antique car 3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header{
+  box-sizing: content-box;
+  width: 550px;
+  height: 100px;
+  border-radius: 10px;
+  padding-top: 20px;
+  color: darkmagenta;
+  background-color: antiquewhite;
+  margin-top: 30px;
+  margin-left: 370px;
+  text-align: center;
+}
+
+.header h5{
+  padding-top: 30px;
+  font-style: italic;
+}
+
+.message{
+  box-sizing: content-box;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  padding-top: 20px;
+  color: darkmagenta;
+  background-color: antiquewhite;
+  margin-top: 200px;
+  margin-left: 470px;
+  text-align: center;
+}
+
+.message p{
+  padding-left: 10px;
+  padding-right: 10px;
+}

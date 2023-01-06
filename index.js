@@ -1,10 +1,8 @@
 const express = require('express');
-const server = express();
+const path = require('path');
+const server = express('server');
 
-//handling request and server methods
-server.use('/services', (req, res) => res.send("Enjoy our services"));
-server.get('/gallery', (req, res)=> res.send('Browse through the gallery'));
-server.put('/about', (req, res)=> res.send('How we started'));
-server.post('/signup', (req, res) => res.send("<h1>Join us now, signup</h1>"));
+//middleware definitions
+server.use(express.static(path.join(__dirname, 'public')));
 
-server.listen(5000, () => {console.log("Request received, wait for response")});
+server.listen(5000, () => console.log("Request received, wait for response"));
