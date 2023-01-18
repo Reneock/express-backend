@@ -109,3 +109,22 @@ input[type=submit] {
   padding-top: 30px;
   font-style: italic;
 }
+
+#login_form{
+  box-sizing: content-box;
+  width: 300px;
+  height: 260px;
+  color: antiquewhite;
+  background-color: magenta;
+  margin-top: 180px;
+  margin-left: 450px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+
+#login_form h2{
+  color: rgb(64, 2, 40);
+  padding-left: 50px;
+}
