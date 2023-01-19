@@ -1,12 +1,17 @@
 {
-  "name": "express-backend",
+  "name": "bookserver",
   "version": "1.0.0",
-  "description": "introducing express server",
+  "description": "This server helps you to manage your books",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ."
   },
+  "keywords": [
+    "Title",
+    "Author",
+    "Description"
+  ],
   "author": "Irene",
   "license": "ISC",
   "dependencies": {

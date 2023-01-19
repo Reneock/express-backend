@@ -1,18 +1,13 @@
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
+const {listBooksController, createBookController, updateBookController, deleteBookController} = require('./controllers');
 const server = express('server');
+server.use(bodyParser.json());
 
-const loginRequestHandler = (req, res) => {
-  console.log(req.body.email);
-  console.log(req.body.password);
-  res.send('Done');
-}
-//middleware definitions
-server.use(express.static(path.join(__dirname, 'public')));
-server.use(bodyParser.urlencoded({extended: false}));
+//routes
+server.get('/book', listBooksController);
+server.post('/book', createBookController);
+server.put('/book', updateBookController);
+server.delete('/book', deleteBookController);
 
-//route 
-server.post('/login', loginRequestHandler);
-
-server.listen(5000, () => console.log("Request received, wait for response"));
+server.listen(5000, () => console.log("book server started"));
