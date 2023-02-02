@@ -23,7 +23,7 @@ const signupController = (req, res) => {
 }
 
 const signinController = async (req, res) => {
-  //find email with user in the database
+  
   try{
     const errors = validationResult(req);
     if(!errors.isEmpty())
