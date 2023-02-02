@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const authorRoutes = require('./routes/author');
 const bookRoutes = require('./routes/book');
+const userRoutes = require('./routes/user');
 
 const server = express('server');
 server.use(bodyParser.json());
@@ -10,6 +11,7 @@ server.use(bodyParser.json());
 //routes
 server.use(authorRoutes);
 server.use(bookRoutes);
+server.use(userRoutes);
 
 mongoose.set("strictQuery", false);
 mongoose.connect("mongodb+srv://BookCollection:KSpTvvmLuZz0j9mw@cluster0.0o28abb.mongodb.net/BookCollection?retryWrites=true&w=majority"
